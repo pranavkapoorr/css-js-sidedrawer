@@ -1,0 +1,58 @@
+*,*::before,*::after{box-sizing:border-box}
+body{
+  overflow-x:hidden;
+}
+#content{
+  padding:1rem
+}
+
+a {
+  text-decoration:none;
+  color:black
+}
+#myDrawer {
+  height:100%;
+  width:0;
+  position:absolute;
+  z-index:1;
+  top:0;
+  left:0;
+  background:pink;
+  overflow-x:hidden;
+  padding-top:60px
+}
+#myDrawer ul{
+  list-style:none
+}
+#myDrawer li{
+  font-size:1.5rem;
+  font-weight:500;
+  padding:5px
+}
+.close {
+  position:absolute;
+  right:0;
+  top:0;
+  padding: 20px 20px
+}
+.open,
+.open::before,
+.open::after{
+  display:block;
+  width:2em;
+  background:black;
+  height:2px;
+  position:relative
+  
+}
+.open::before,
+.open::after{
+  content:'';
+  position:absolute;
+}
+.open::before{
+  top:7px
+}
+.open::after{
+  bottom:7px
+}
